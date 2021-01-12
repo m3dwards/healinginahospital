@@ -100,7 +100,7 @@ blockquote {
 a.ctaSprite {
 	width: 300px;
 	height: 82px;
-	background: url("./static_files/ctaSprite.jpg") 0 0;
+	background: url("ctaSprite.jpg") 0 0;
 	color: #fff;
 	text-decoration: none;
 	text-align: center;
@@ -109,7 +109,7 @@ a.ctaSprite {
 	padding:15px 15px 0px 15px;
 }
 a.ctaSprite:hover {
-	background: url("./static_files/ctaSprite.jpg") 0 -82px;
+	background: url("ctaSprite.jpg") 0 -82px;
 	background-repeat: no-repeat;
 	color: #fff;
 }
