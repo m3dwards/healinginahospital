@@ -42,6 +42,11 @@ body {
 	webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;
 }
 
+.homepage-button {
+    width: 200px;
+    padding: 10px 0;
+}
+
 .quote {
 	color:#fff;
 	font-size:2em;
@@ -120,7 +125,7 @@ span.yellow {
 
 .btn-default {
 	background-color:#000033;
- 
+
 	color:#fff;
 }
 
