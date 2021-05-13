@@ -55,7 +55,68 @@ surprising results!</p>
     <div class="container">
         <div class="row">
           <div class="col">
-            <a href="./static_files/se.mp3" download>Buy Now </a>
+            <div style="max-width: 700px; margin: 0 auto;" >
+              <h2 style="color: white;">Sleep Easy & Be Well MP3 - £6</h2>
+
+              <p><em>All proceeds benefit the Healing Trust’s charitable work</em></p>
+
+              <p>This spoken word recording helps the listener to relax and drift into deep and nourishing sleep. The background sound, with no beat and no chimes, has been designed to be intensely soothing.</p>
+
+              <div class="text-center">
+              <p><a href="" id="show-more-info" style="color: white;">More info</a></p>
+              </div>
+
+              <div id="more-info" style="display:none;">
+
+              <p>A consultant physician gave a copy of this CD to one of his patients who had not slept since her husband died, two years previously. She reported sleeping well from the first time she listened to it.</p>
+
+              <p>A gentleman who had been on sleeping tablets for three years came straight off them when he started listening to this CD.</p>
+
+              <p>A mother listened to this while doing the ironing, before offering it to her wakeful teenage daughter. Despite not using the CD in the manner intended, she found that she was no longer afraid of going to the dentist!</p>
+
+<div id="smart-button-container">
+      <div style="text-align: center;">
+        <div id="paypal-button-container"></div>
+      </div>
+    </div>
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=GBP" data-sdk-integration-source="button-factory"></script>
+  <script>
+   function initPayPalButton() {
+     paypal.Buttons({
+       style: {
+         shape: 'rect',
+         color: 'gold',
+         layout: 'vertical',
+         label: 'paypal',
+
+       },
+
+       createOrder: function(data, actions) {
+         return actions.order.create({
+           purchase_units: [{"description":"Sleep Easy & Be Well","amount":{"currency_code":"GBP","value":0.10}}]
+         });
+       },
+
+       onApprove: function(data, actions) {
+         return actions.order.capture().then(function(details) {
+           window.location = "/se.html";
+           /* alert('Transaction completed by ' + details.payer.name.given_name + '!'); */
+         });
+       },
+
+       onError: function(err) {
+         console.log(err);
+       }
+     }).render('#paypal-button-container');
+   }
+   initPayPalButton();
+  </script>
+  <div class="text-center">
+  <p><a href="" id="hide-more-info"  style="display:none; color: white;">Less info</a></p>
+  </div>
+              </div>
+            </div>
+
           </div>
         </div>
     </div>
@@ -115,5 +176,19 @@ and more:</p>
     <script src="./static_files/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="./static_files/bootstrap.min.js"></script>
+    <script>
+     $("#show-more-info").click((e) => {
+       e.preventDefault()
+       $("#more-info").show();
+       $("#hide-more-info").show();
+       $("#show-more-info").hide();
+     })
+     $("#hide-more-info").click((e) => {
+       e.preventDefault()
+       $("#more-info").hide();
+       $("#hide-more-info").hide();
+       $("#show-more-info").show();
+     })
+    </script>
 
 </body></html>
