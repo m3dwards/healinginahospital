@@ -137,3 +137,10 @@ p.smaller {
 	color:#013C5C;
 	font-size:1.3em;
 }
+.social-icon {
+    width:60px;
+    padding: 10px 0;
+}
+.social-icon-link:hover {
+    text-decoration: none;
+}
