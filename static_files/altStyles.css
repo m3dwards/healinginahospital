@@ -66,8 +66,8 @@ body {
 .heading {
 	color:#013C5C;
 	font-size:2.3em;
-	margin-bottom:30px;
-	margin-top:30px;
+	margin-bottom:20px;
+	margin-top:0px;
 	line-height: 1.2em;
 }
 
@@ -85,8 +85,8 @@ body {
 	font-size:1.6em;
 	line-height:1.3em;
 	font-weight:600;
-		margin-bottom:50px;
-			margin-top:30px;
+		margin-bottom:20px;
+			margin-top:20px;
 }
 
 .footer {
